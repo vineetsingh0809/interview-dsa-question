@@ -1,3 +1,5 @@
+// Method 1
+
 const findMinAndMax = (arr)=>{
 const sortedArr = arr.sort((a,b)=>a-b)
 const minVal = sortedArr[0];
@@ -8,6 +10,8 @@ console.log("Maximum value in the array is :- ", maxVal)
 
 const input1 = [22,45,66,32,11,87,19]
 findMinAndMax(input1)
+
+// Method 2
 
 const minMax = (arr)=>{
     let min = arr[0];
@@ -26,6 +30,8 @@ const minMax = (arr)=>{
 
 const input2 = [12,44,31,90,56,78,51,99];
 console.log(minMax(input2));
+
+// Method 3
 
 const array = [23,44,67,88,12];
 let minValue = array.reduce((a,b)=> a < b ? a : b);
